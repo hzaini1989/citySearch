@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html ng-app="calendarapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>奇迹旅行－城市选择</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="Shortcut Icon" href="//r.uzaicdn.com/favicon-sj.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body ng-controller="calendardetail">
+    <div class="uzai-header">
+        <i class="iconfont icon-back" ng-click="backpage();"></i>
+        <b>出发城市</b>
+    </div>
+
+    <div class="uzai-search">
+        <input type="text" placeholder="搜索城市中文/英文开头字母" id="inputs">
+    </div>
+    <div class="uzai-citys">
+        <div class="list-group-title zHide" id="list_group_title">
+                                        B
+        </div>
+        <div class="destlist-catalogues" style="display: block;">
+            <!--<b data-page="0">
+               
+            </b>
+            <b data-page="1">
+               
+            </b>
+            <b data-page="2">
+                
+            </b>
+            <b data-page="3">
+                
+            </b>
+            <b data-page="4">
+                
+            </b>
+            <b data-page="5">
+                
+            </b>
+            <b data-page="6">
+                Q
+            </b>
+            <b data-page="7">
+                S
+            </b>
+            <b data-page="8">
+                T
+            </b>
+            <b data-page="9">
+                W
+            </b>
+            <b data-page="10">
+                X
+            </b>
+            <b data-page="11">
+                Z
+            </b>-->
+        </div>
+        <div class="destlist" id="destlist">
+            <div class="list-group">
+                <ul class="list">
+                    <li data-flag="A">
+                        <p class="title">
+                                        A
+                        </p>
+                    </li>              
+                    <li data-flag="B">
+                        <p class="title">
+                                        B
+                        </p>
+                    </li>
+                    <li data-flag="C">
+                        <p class="title">
+                                        C
+                        </p>
+                    </li>
+                    <li data-flag="D">
+                        <p class="title">
+                                        D
+                        </p>
+                    </li>
+                    <li data-flag="H">
+                        <p class="title">
+                                        H
+                        </p>
+                    </li>
+                    <li data-flag="J">
+                        <p class="title">
+                                        J
+                        </p>
+                    </li>
+                    <li data-flag="N">
+                        <p class="title">
+                                        N
+                        </p>
+                    </li>
+                    <li data-flag="Q">
+                        <p class="title">
+                                        Q
+                        </p>
+                    </li>
+                    <li data-flag="S">
+                        <p class="title">
+                                        S
+                        </p>
+                    </li>
+                    <li data-flag="T">
+                        <p class="title">
+                                        T
+                        </p>
+                    </li>
+                    <li data-flag="W">
+                        <p class="title">
+                                        W
+                        </p>
+                    </li>
+                    <li data-flag="X">
+                        <p class="title">
+                                        X
+                        </p>
+                    </li>
+                    <li data-flag="Z">
+                        <p class="title">
+                                        Z
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="list-group-search-error list-group zHide">亲，真多没有更多了～</div>
+
+
+
+
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/api.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
